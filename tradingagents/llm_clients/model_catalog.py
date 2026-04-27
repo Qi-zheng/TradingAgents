@@ -112,6 +112,16 @@ MODEL_OPTIONS: ProviderModeOptions = {
             ("Qwen3:latest (8B, local)", "qwen3:latest"),
         ],
     },
+    "duckcoding": {
+        "quick": [
+            ("Gemini 3.1 Pro Preview", "gemini-3.1-pro-preview"),
+            ("Custom model ID", "custom"),
+        ],
+        "deep": [
+            ("Gemini 3.1 Pro Preview", "gemini-3.1-pro-preview"),
+            ("Custom model ID", "custom"),
+        ],
+    },
 }
 
 

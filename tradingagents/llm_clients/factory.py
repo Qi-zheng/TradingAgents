@@ -38,6 +38,10 @@ def create_llm_client(
         from .openai_client import OpenAIClient
         return OpenAIClient(model, base_url, provider=provider_lower, **kwargs)
 
+    if provider_lower == "duckcoding":
+        from .duckcoding_client import DuckCodingClient
+        return DuckCodingClient(model, base_url, **kwargs)
+
     if provider_lower == "anthropic":
         from .anthropic_client import AnthropicClient
         return AnthropicClient(model, base_url, **kwargs)
